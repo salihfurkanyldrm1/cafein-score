@@ -1,0 +1,32 @@
+name: sadakatapp
+description: "A yeni nesil sadakat uygulaması."
+publish_to: 'none'
+version: 1.0.0+1
+
+# 1. SDK Ayarı (En başta ve dışarıda olmalı)
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+
+# 2. Paketler (Hepsi aynı hizada olmalı)
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  
+  # Firebase Paketleri
+  firebase_core: ^3.0.0
+  firebase_auth: ^5.0.0
+  cloud_firestore: ^5.0.0
+  
+  # QR ve Diğer Yardımcılar
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^5.0.0
+  flutter_riverpod: ^2.5.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
